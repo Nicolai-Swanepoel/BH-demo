@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!-- The Atacama Group -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TAG develops strategic energy infrastructure, storage and corridor logistics that strengthen energy security across Africa." />
+  <meta name="theme-color" content="#f5f5db" />
+  <title>The Atacama Group | Strategic Energy Infrastructure</title>
+
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <div class="container nav__inner">
+        <a class="brand" href="#top" aria-label="The Atacama Group Home">
+          <img class="brand__logo" src="assets/logo/tag-logo.png" alt="The Atacama Group" loading="eager" />
+        </a>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleIcon" aria-hidden="true">
+            <svg class="nav__icon nav__icon--menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path>
+            </svg>
+            <svg class="nav__icon nav__icon--close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>
+            </svg>
+          </span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="#corridor" class="nav__link">The Corridor</a>
+          <a href="#solutions" class="nav__link">What We Do</a>
+          <a href="#presence" class="nav__link">Footprint</a>
+          <a href="#linkedin" class="nav__link">LinkedIn</a>
+          <a href="#insights" class="nav__link nav__link--live"><span class="live-dot" aria-hidden="true"></span>Live Feed</a>
+          <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+        </div>
+      </div>
+
+      <div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+
+      <div class="ticker" role="region" aria-label="African Energy News live ticker">
+        <div class="container ticker__inner">
+          <div class="ticker__left">
+            <span class="ticker__live" aria-hidden="true">
+              <span class="ticker__led" aria-hidden="true"></span>
+              LIVE
+            </span>
+            <span class="ticker__label" title="Live headlines">AFRICA&nbsp;ENERGY&nbsp;WIRE</span>
+          </div>
+
+          <div class="ticker__rail" aria-live="polite">
+            <div class="ticker__track" id="newsTickerTrack">
+              <span class="ticker__item">Loading headlines…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__coords mono"><span class="nowrap">22°57′S 14°30′E</span> · <span class="nowrap">WALVIS BAY</span> · <span class="nowrap">ATLANTIC GATEWAY</span></p>
+
+          <h1 class="hero__title">
+            Energy moves Africa.<br />
+            <span class="hero__em">We build what moves it.</span>
+          </h1>
+
+          <p class="hero__lead">
+            Strategic storage, bulk handling and corridor logistics. We develop integrated platforms that keep
+            supply chains moving from port to inland markets, and keep growth on schedule.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#corridor">Follow the corridor <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#solutions">What we do</a>
+          </div>
+
+          <div class="hero__stats" role="list" aria-label="Key highlights">
+            <div class="hstat" role="listitem">
+              <span class="hstat__key mono">PLATFORM</span>
+              <span class="hstat__val">Bulk storage &amp; terminals</span>
+            </div>
+            <div class="hstat" role="listitem">
+              <span class="hstat__key mono">DELIVERY</span>
+              <span class="hstat__val">Rail-linked corridors</span>
+            </div>
+            <div class="hstat" role="listitem">
+              <span class="hstat__key mono">STANDARD</span>
+              <span class="hstat__val">Compliance-led execution</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <figure class="hero__frame">
+            <img src="assets/img/hero-depot.jpg" alt="Port and fuel terminal at dusk, Walvis Bay" loading="eager" />
+            <figcaption class="hero__caption mono"></figcaption>
+          </figure>
+          <div class="hero__frameShadow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CORRIDOR (signature) ============ -->
+    <section class="section section--white" id="corridor" aria-label="How the corridor works">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow mono">PORT&nbsp;→&nbsp;STORAGE&nbsp;→&nbsp;RAIL&nbsp;→&nbsp;MARKET</p>
+          <h2 class="section__title">One connected corridor,<br class="only-desktop" /> from port to inland demand.</h2>
+          <p class="section__sub">
+            Every TAG platform is designed as part of a single supply chain. Product lands at the coast,
+            is stored and metered at scale, and moves inland by rail and road to the markets that need it.
+          </p>
+        </div>
+
+        <div class="corridor__diagram reveal" role="img" aria-label="Diagram of the supply corridor: port intake, bulk storage, rail dispatch, inland markets">
+          <svg viewBox="0 0 1160 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <path class="corridor__base" d="M100 210 C 270 210, 320 110, 470 110 C 620 110, 660 210, 830 210 C 950 210, 1000 150, 1060 150" />
+            <path class="corridor__flow" d="M100 210 C 270 210, 320 110, 470 110 C 620 110, 660 210, 830 210 C 950 210, 1000 150, 1060 150" />
+
+            <g class="corridor__station" transform="translate(100,210)">
+              <circle class="corridor__ring" r="16" /><circle class="corridor__dot" r="6" />
+              <text class="corridor__code" x="0" y="52" text-anchor="middle">PORT</text>
+              <text class="corridor__name" x="0" y="72" text-anchor="middle">Marine intake &amp; discharge</text>
+            </g>
+            <g class="corridor__station" transform="translate(470,110)">
+              <circle class="corridor__ring" r="16" /><circle class="corridor__dot" r="6" />
+              <text class="corridor__code" x="0" y="-46" text-anchor="middle">STORAGE</text>
+              <text class="corridor__name" x="0" y="-28" text-anchor="middle">Tank farms &amp; bulk terminals</text>
+            </g>
+            <g class="corridor__station" transform="translate(830,210)">
+              <circle class="corridor__ring" r="16" /><circle class="corridor__dot" r="6" />
+              <text class="corridor__code" x="0" y="52" text-anchor="middle">RAIL</text>
+              <text class="corridor__name" x="0" y="72" text-anchor="middle">Dispatch &amp; corridor haulage</text>
+            </g>
+            <g class="corridor__station" transform="translate(1060,150)">
+              <circle class="corridor__ring" r="16" /><circle class="corridor__dot" r="6" />
+              <text class="corridor__code" x="0" y="-46" text-anchor="middle">MARKET</text>
+              <text class="corridor__name" x="0" y="-28" text-anchor="middle">Inland demand centres</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="corridor__facts">
+          <div class="fact reveal">
+            <span class="fact__key mono">THROUGHPUT</span>
+            <p class="fact__text">Storage and terminal systems engineered for reliability, turnaround and metered accountability.</p>
+          </div>
+          <div class="fact reveal">
+            <span class="fact__key mono">RESILIENCE</span>
+            <p class="fact__text">Strategic capacity that buffers supply shocks and strengthens energy security for the region.</p>
+          </div>
+          <div class="fact reveal">
+            <span class="fact__key mono">COST&nbsp;TO&nbsp;SERVE</span>
+            <p class="fact__text">Rail integration and corridor design that lower delivered cost into landlocked markets.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT WE DO (capabilities + active platforms, merged) ============ -->
+    <section class="section" id="solutions" aria-label="What we do">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="eyebrow mono">CORE&nbsp;CAPABILITIES&nbsp;·&nbsp;ACTIVE&nbsp;PLATFORMS</p>
+            <h2 class="section__title">What We Do</h2>
+            <p class="section__sub">Four capabilities aligned to energy infrastructure, logistics execution and scalable regional delivery — put to work through three active, mission-led platforms focused on strategic capacity, efficient distribution and stronger energy access across the region.</p>
+          </div>
+          <a class="btn btn--primary btn--small" href="#contact">Request a briefing</a>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="competency reveal">
+            <span class="competency__tag mono">STORAGE</span>
+            <h3 class="competency__title">Bulk Storage Infrastructure</h3>
+            <p class="competency__text">Strategic storage built for reliability, throughput and the compliance standards required for long-life operations.</p>
+            <ul class="competency__list">
+              <li>Tank farms &amp; terminal systems</li>
+              <li>Bulk load terminals &amp; metering</li>
+              <li>Maintenance, training &amp; readiness</li>
+            </ul>
+          </article>
+
+          <article class="competency reveal">
+            <span class="competency__tag mono">CORRIDOR</span>
+            <h3 class="competency__title">Corridor Distribution</h3>
+            <p class="competency__text">Integrated rail and road distribution designed to reduce delays, improve access and lower delivered cost inland.</p>
+            <ul class="competency__list">
+              <li>Corridor route design</li>
+              <li>Rail integration &amp; dispatch</li>
+              <li>Fleet &amp; distribution support models</li>
+            </ul>
+          </article>
+
+          <article class="competency reveal">
+            <span class="competency__tag mono">TRUCK&nbsp;PORTS</span>
+            <h3 class="competency__title">Truck Ports &amp; Services</h3>
+            <p class="competency__text">Supporting infrastructure that improves fleet flow, reduces congestion and adds dependable services at key operating points.</p>
+            <ul class="competency__list">
+              <li>Secure parking &amp; access control</li>
+              <li>Fueling &amp; driver support services</li>
+              <li>Cold storage &amp; cargo support</li>
+            </ul>
+          </article>
+
+          <article class="competency reveal">
+            <span class="competency__tag mono">GOVERNANCE</span>
+            <h3 class="competency__title">Governance &amp; Delivery</h3>
+            <p class="competency__text">A disciplined delivery model built around compliance, transparency and infrastructure that scales with market demand.</p>
+            <ul class="competency__list">
+              <li>Regulatory &amp; stakeholder alignment</li>
+              <li>Project delivery &amp; oversight</li>
+              <li>Performance reporting &amp; transparency</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTPRINT ============ -->
+    <section class="section section--deep" id="presence" aria-label="Operational footprint">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="eyebrow mono">OPERATIONAL&nbsp;FOOTPRINT</p>
+            <h2 class="section__title">Built Where Energy Moves</h2>
+            <p class="section__sub">Regional execution with a focus on energy access, inland supply efficiency and strategic African trade routes.</p>
+          </div>
+          <a class="btn btn--ghost btn--small" href="#contact">Partnerships</a>
+        </div>
+
+        <div class="presence">
+          <div class="presence__map fmap reveal" id="footprintMap" aria-label="Interactive operational map">
+            <svg class="fmap__svg" viewBox="0 0 640 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img"
+                 aria-label="Map of Africa showing TAG gateways at Walvis Bay and Djibouti with corridors to DR Congo, Zambia, Zimbabwe and Ethiopia">
+              <path class="fmap__dots" d="M189 39h.01M202 39h.01M215 39h.01M228 39h.01M241 39h.01M254 39h.01M267 39h.01M130 52h.01M143 52h.01M156 52h.01M169 52h.01M182 52h.01M195 52h.01M208 52h.01M221 52h.01M234 52h.01M247 52h.01M260 52h.01M124 65h.01M137 65h.01M150 65h.01M163 65h.01M176 65h.01M189 65h.01M202 65h.01M215 65h.01M228 65h.01M241 65h.01M254 65h.01M267 65h.01M104 78h.01M117 78h.01M130 78h.01M143 78h.01M156 78h.01M169 78h.01M182 78h.01M195 78h.01M208 78h.01M221 78h.01M234 78h.01M247 78h.01M260 78h.01M273 78h.01M286 78h.01M299 78h.01M351 78h.01M364 78h.01M111 91h.01M124 91h.01M137 91h.01M150 91h.01M163 91h.01M176 91h.01M189 91h.01M202 91h.01M215 91h.01M228 91h.01M241 91h.01M254 91h.01M267 91h.01M280 91h.01M293 91h.01M306 91h.01M319 91h.01M358 91h.01M371 91h.01M384 91h.01M397 91h.01M410 91h.01M436 91h.01M449 91h.01M462 91h.01M104 104h.01M117 104h.01M130 104h.01M143 104h.01M156 104h.01M169 104h.01M182 104h.01M195 104h.01M208 104h.01M221 104h.01M234 104h.01M247 104h.01M260 104h.01M273 104h.01M286 104h.01M299 104h.01M312 104h.01M325 104h.01M338 104h.01M351 104h.01M364 104h.01M377 104h.01M390 104h.01M403 104h.01M416 104h.01M429 104h.01M442 104h.01M455 104h.01M468 104h.01M85 117h.01M98 117h.01M111 117h.01M124 117h.01M137 117h.01M150 117h.01M163 117h.01M176 117h.01M189 117h.01M202 117h.01M215 117h.01M228 117h.01M241 117h.01M254 117h.01M267 117h.01M280 117h.01M293 117h.01M306 117h.01M319 117h.01M332 117h.01M345 117h.01M358 117h.01M371 117h.01M384 117h.01M397 117h.01M410 117h.01M423 117h.01M436 117h.01M449 117h.01M462 117h.01M78 130h.01M91 130h.01M104 130h.01M117 130h.01M130 130h.01M143 130h.01M156 130h.01M169 130h.01M182 130h.01M195 130h.01M208 130h.01M221 130h.01M234 130h.01M247 130h.01M260 130h.01M273 130h.01M286 130h.01M299 130h.01M312 130h.01M325 130h.01M338 130h.01M351 130h.01M364 130h.01M377 130h.01M390 130h.01M403 130h.01M416 130h.01M429 130h.01M442 130h.01M455 130h.01M59 143h.01M72 143h.01M85 143h.01M98 143h.01M111 143h.01M124 143h.01M137 143h.01M150 143h.01M163 143h.01M176 143h.01M189 143h.01M202 143h.01M215 143h.01M228 143h.01M241 143h.01M254 143h.01M267 143h.01M280 143h.01M293 143h.01M306 143h.01M319 143h.01M332 143h.01M345 143h.01M358 143h.01M371 143h.01M384 143h.01M397 143h.01M410 143h.01M423 143h.01M436 143h.01M449 143h.01M462 143h.01M52 156h.01M65 156h.01M78 156h.01M91 156h.01M104 156h.01M117 156h.01M130 156h.01M143 156h.01M156 156h.01M169 156h.01M182 156h.01M195 156h.01M208 156h.01M221 156h.01M234 156h.01M247 156h.01M260 156h.01M273 156h.01M286 156h.01M299 156h.01M312 156h.01M325 156h.01M338 156h.01M351 156h.01M364 156h.01M377 156h.01M390 156h.01M403 156h.01M416 156h.01M429 156h.01M442 156h.01M455 156h.01M468 156h.01M46 169h.01M59 169h.01M72 169h.01M85 169h.01M98 169h.01M111 169h.01M124 169h.01M137 169h.01M150 169h.01M163 169h.01M176 169h.01M189 169h.01M202 169h.01M215 169h.01M228 169h.01M241 169h.01M254 169h.01M267 169h.01M280 169h.01M293 169h.01M306 169h.01M319 169h.01M332 169h.01M345 169h.01M358 169h.01M371 169h.01M384 169h.01M397 169h.01M410 169h.01M423 169h.01M436 169h.01M449 169h.01M462 169h.01M475 169h.01M39 182h.01M52 182h.01M65 182h.01M78 182h.01M91 182h.01M104 182h.01M117 182h.01M130 182h.01M143 182h.01M156 182h.01M169 182h.01M182 182h.01M195 182h.01M208 182h.01M221 182h.01M234 182h.01M247 182h.01M260 182h.01M273 182h.01M286 182h.01M299 182h.01M312 182h.01M325 182h.01M338 182h.01M351 182h.01M364 182h.01M377 182h.01M390 182h.01M403 182h.01M416 182h.01M429 182h.01M442 182h.01M455 182h.01M468 182h.01M481 182h.01M46 195h.01M59 195h.01M72 195h.01M85 195h.01M98 195h.01M111 195h.01M124 195h.01M137 195h.01M150 195h.01M163 195h.01M176 195h.01M189 195h.01M202 195h.01M215 195h.01M228 195h.01M241 195h.01M254 195h.01M267 195h.01M280 195h.01M293 195h.01M306 195h.01M319 195h.01M332 195h.01M345 195h.01M358 195h.01M371 195h.01M384 195h.01M397 195h.01M410 195h.01M423 195h.01M436 195h.01M449 195h.01M462 195h.01M475 195h.01M488 195h.01M52 208h.01M65 208h.01M78 208h.01M91 208h.01M104 208h.01M117 208h.01M130 208h.01M143 208h.01M156 208h.01M169 208h.01M182 208h.01M195 208h.01M208 208h.01M221 208h.01M234 208h.01M247 208h.01M260 208h.01M273 208h.01M286 208h.01M299 208h.01M312 208h.01M325 208h.01M338 208h.01M351 208h.01M364 208h.01M377 208h.01M390 208h.01M403 208h.01M416 208h.01M429 208h.01M442 208h.01M455 208h.01M468 208h.01M481 208h.01M494 208h.01M46 221h.01M59 221h.01M72 221h.01M85 221h.01M98 221h.01M111 221h.01M124 221h.01M137 221h.01M150 221h.01M163 221h.01M176 221h.01M189 221h.01M202 221h.01M215 221h.01M228 221h.01M241 221h.01M254 221h.01M267 221h.01M280 221h.01M293 221h.01M306 221h.01M319 221h.01M332 221h.01M345 221h.01M358 221h.01M371 221h.01M384 221h.01M397 221h.01M410 221h.01M423 221h.01M436 221h.01M449 221h.01M462 221h.01M475 221h.01M488 221h.01M501 221h.01M39 234h.01M52 234h.01M65 234h.01M78 234h.01M91 234h.01M104 234h.01M117 234h.01M130 234h.01M143 234h.01M156 234h.01M169 234h.01M182 234h.01M195 234h.01M208 234h.01M221 234h.01M234 234h.01M247 234h.01M260 234h.01M273 234h.01M286 234h.01M299 234h.01M312 234h.01M325 234h.01M338 234h.01M351 234h.01M364 234h.01M377 234h.01M390 234h.01M403 234h.01M416 234h.01M429 234h.01M442 234h.01M455 234h.01M468 234h.01M481 234h.01M494 234h.01M507 234h.01M46 247h.01M59 247h.01M72 247h.01M85 247h.01M98 247h.01M111 247h.01M124 247h.01M137 247h.01M150 247h.01M163 247h.01M176 247h.01M189 247h.01M202 247h.01M215 247h.01M228 247h.01M241 247h.01M254 247h.01M267 247h.01M280 247h.01M293 247h.01M306 247h.01M319 247h.01M332 247h.01M345 247h.01M358 247h.01M371 247h.01M384 247h.01M397 247h.01M410 247h.01M423 247h.01M436 247h.01M449 247h.01M462 247h.01M475 247h.01M488 247h.01M501 247h.01M514 247h.01M527 247h.01M52 260h.01M65 260h.01M78 260h.01M91 260h.01M104 260h.01M117 260h.01M130 260h.01M143 260h.01M156 260h.01M169 260h.01M182 260h.01M195 260h.01M208 260h.01M221 260h.01M234 260h.01M247 260h.01M260 260h.01M273 260h.01M286 260h.01M299 260h.01M312 260h.01M325 260h.01M338 260h.01M351 260h.01M364 260h.01M377 260h.01M390 260h.01M403 260h.01M416 260h.01M429 260h.01M442 260h.01M455 260h.01M468 260h.01M481 260h.01M494 260h.01M507 260h.01M520 260h.01M533 260h.01M59 273h.01M72 273h.01M85 273h.01M98 273h.01M111 273h.01M124 273h.01M137 273h.01M150 273h.01M163 273h.01M176 273h.01M189 273h.01M202 273h.01M215 273h.01M228 273h.01M241 273h.01M254 273h.01M267 273h.01M280 273h.01M293 273h.01M306 273h.01M319 273h.01M332 273h.01M345 273h.01M358 273h.01M371 273h.01M384 273h.01M397 273h.01M410 273h.01M423 273h.01M436 273h.01M462 273h.01M475 273h.01M488 273h.01M501 273h.01M514 273h.01M527 273h.01M540 273h.01M566 273h.01M579 273h.01M592 273h.01M605 273h.01M78 286h.01M91 286h.01M104 286h.01M117 286h.01M130 286h.01M143 286h.01M156 286h.01M169 286h.01M182 286h.01M195 286h.01M208 286h.01M221 286h.01M234 286h.01M247 286h.01M260 286h.01M273 286h.01M286 286h.01M299 286h.01M312 286h.01M325 286h.01M338 286h.01M351 286h.01M364 286h.01M377 286h.01M468 286h.01M481 286h.01M494 286h.01M507 286h.01M520 286h.01M533 286h.01M546 286h.01M559 286h.01M572 286h.01M585 286h.01M598 286h.01M85 299h.01M98 299h.01M111 299h.01M124 299h.01M137 299h.01M150 299h.01M163 299h.01M176 299h.01M189 299h.01M202 299h.01M215 299h.01M228 299h.01M241 299h.01M254 299h.01M267 299h.01M280 299h.01M293 299h.01M306 299h.01M319 299h.01M332 299h.01M345 299h.01M358 299h.01M371 299h.01M384 299h.01M462 299h.01M475 299h.01M488 299h.01M501 299h.01M514 299h.01M527 299h.01M540 299h.01M553 299h.01M566 299h.01M579 299h.01M592 299h.01M91 312h.01M104 312h.01M117 312h.01M130 312h.01M143 312h.01M156 312h.01M169 312h.01M182 312h.01M221 312h.01M234 312h.01M247 312h.01M260 312h.01M273 312h.01M286 312h.01M299 312h.01M312 312h.01M325 312h.01M338 312h.01M351 312h.01M364 312h.01M377 312h.01M390 312h.01M481 312h.01M494 312h.01M507 312h.01M520 312h.01M533 312h.01M546 312h.01M559 312h.01M572 312h.01M585 312h.01M111 325h.01M228 325h.01M241 325h.01M254 325h.01M267 325h.01M280 325h.01M293 325h.01M306 325h.01M319 325h.01M332 325h.01M345 325h.01M358 325h.01M371 325h.01M384 325h.01M397 325h.01M410 325h.01M475 325h.01M488 325h.01M501 325h.01M514 325h.01M527 325h.01M540 325h.01M553 325h.01M566 325h.01M579 325h.01M273 338h.01M286 338h.01M299 338h.01M312 338h.01M325 338h.01M338 338h.01M351 338h.01M364 338h.01M377 338h.01M390 338h.01M403 338h.01M416 338h.01M429 338h.01M442 338h.01M455 338h.01M468 338h.01M481 338h.01M494 338h.01M507 338h.01M520 338h.01M533 338h.01M546 338h.01M559 338h.01M267 351h.01M280 351h.01M293 351h.01M306 351h.01M319 351h.01M332 351h.01M345 351h.01M358 351h.01M371 351h.01M384 351h.01M397 351h.01M410 351h.01M423 351h.01M436 351h.01M449 351h.01M462 351h.01M475 351h.01M488 351h.01M501 351h.01M514 351h.01M527 351h.01M540 351h.01M553 351h.01M260 364h.01M273 364h.01M286 364h.01M299 364h.01M312 364h.01M325 364h.01M338 364h.01M351 364h.01M364 364h.01M377 364h.01M390 364h.01M403 364h.01M416 364h.01M429 364h.01M442 364h.01M455 364h.01M468 364h.01M481 364h.01M494 364h.01M507 364h.01M520 364h.01M533 364h.01M267 377h.01M280 377h.01M293 377h.01M306 377h.01M319 377h.01M332 377h.01M345 377h.01M358 377h.01M371 377h.01M384 377h.01M397 377h.01M410 377h.01M423 377h.01M436 377h.01M449 377h.01M462 377h.01M475 377h.01M488 377h.01M501 377h.01M514 377h.01M527 377h.01M273 390h.01M286 390h.01M299 390h.01M312 390h.01M325 390h.01M338 390h.01M351 390h.01M364 390h.01M377 390h.01M390 390h.01M403 390h.01M416 390h.01M429 390h.01M442 390h.01M455 390h.01M468 390h.01M481 390h.01M494 390h.01M507 390h.01M280 403h.01M293 403h.01M306 403h.01M319 403h.01M332 403h.01M345 403h.01M358 403h.01M371 403h.01M384 403h.01M397 403h.01M410 403h.01M423 403h.01M436 403h.01M449 403h.01M462 403h.01M475 403h.01M488 403h.01M501 403h.01M286 416h.01M299 416h.01M312 416h.01M325 416h.01M338 416h.01M351 416h.01M364 416h.01M377 416h.01M390 416h.01M403 416h.01M416 416h.01M429 416h.01M442 416h.01M455 416h.01M468 416h.01M481 416h.01M494 416h.01M293 429h.01M306 429h.01M319 429h.01M332 429h.01M345 429h.01M358 429h.01M371 429h.01M384 429h.01M397 429h.01M410 429h.01M423 429h.01M436 429h.01M449 429h.01M462 429h.01M475 429h.01M488 429h.01M501 429h.01M299 442h.01M312 442h.01M325 442h.01M338 442h.01M351 442h.01M364 442h.01M377 442h.01M390 442h.01M403 442h.01M416 442h.01M429 442h.01M442 442h.01M455 442h.01M468 442h.01M481 442h.01M494 442h.01M507 442h.01M306 455h.01M319 455h.01M332 455h.01M345 455h.01M358 455h.01M371 455h.01M384 455h.01M397 455h.01M410 455h.01M423 455h.01M436 455h.01M449 455h.01M462 455h.01M475 455h.01M488 455h.01M501 455h.01M514 455h.01M299 468h.01M312 468h.01M325 468h.01M338 468h.01M351 468h.01M364 468h.01M377 468h.01M390 468h.01M403 468h.01M416 468h.01M429 468h.01M442 468h.01M455 468h.01M468 468h.01M481 468h.01M494 468h.01M507 468h.01M293 481h.01M306 481h.01M319 481h.01M332 481h.01M345 481h.01M358 481h.01M371 481h.01M384 481h.01M397 481h.01M410 481h.01M423 481h.01M436 481h.01M449 481h.01M462 481h.01M475 481h.01M488 481h.01M501 481h.01M514 481h.01M592 481h.01M286 494h.01M299 494h.01M312 494h.01M325 494h.01M338 494h.01M351 494h.01M364 494h.01M377 494h.01M390 494h.01M403 494h.01M416 494h.01M429 494h.01M442 494h.01M455 494h.01M468 494h.01M481 494h.01M494 494h.01M507 494h.01M572 494h.01M585 494h.01M598 494h.01M280 507h.01M293 507h.01M306 507h.01M319 507h.01M332 507h.01M345 507h.01M358 507h.01M371 507h.01M384 507h.01M397 507h.01M410 507h.01M423 507h.01M436 507h.01M449 507h.01M462 507h.01M475 507h.01M488 507h.01M501 507h.01M553 507h.01M566 507h.01M579 507h.01M592 507h.01M286 520h.01M299 520h.01M312 520h.01M325 520h.01M338 520h.01M351 520h.01M364 520h.01M377 520h.01M390 520h.01M403 520h.01M416 520h.01M429 520h.01M442 520h.01M455 520h.01M468 520h.01M481 520h.01M559 520h.01M572 520h.01M585 520h.01M293 533h.01M306 533h.01M319 533h.01M332 533h.01M345 533h.01M358 533h.01M371 533h.01M384 533h.01M397 533h.01M410 533h.01M423 533h.01M436 533h.01M449 533h.01M462 533h.01M553 533h.01M566 533h.01M579 533h.01M299 546h.01M312 546h.01M325 546h.01M338 546h.01M351 546h.01M364 546h.01M377 546h.01M390 546h.01M403 546h.01M416 546h.01M429 546h.01M442 546h.01M455 546h.01M468 546h.01M546 546h.01M559 546h.01M572 546h.01M306 559h.01M319 559h.01M332 559h.01M345 559h.01M358 559h.01M371 559h.01M384 559h.01M397 559h.01M410 559h.01M423 559h.01M436 559h.01M449 559h.01M462 559h.01M475 559h.01M553 559h.01M566 559h.01M579 559h.01M312 572h.01M325 572h.01M338 572h.01M351 572h.01M364 572h.01M377 572h.01M390 572h.01M403 572h.01M416 572h.01M429 572h.01M442 572h.01M455 572h.01M468 572h.01M546 572h.01M559 572h.01M572 572h.01M306 585h.01M319 585h.01M332 585h.01M345 585h.01M358 585h.01M371 585h.01M384 585h.01M397 585h.01M410 585h.01M423 585h.01M436 585h.01M449 585h.01M312 598h.01M325 598h.01M338 598h.01M351 598h.01M364 598h.01M377 598h.01M390 598h.01M403 598h.01M416 598h.01M429 598h.01M442 598h.01M319 611h.01M332 611h.01M345 611h.01M358 611h.01M371 611h.01M384 611h.01M397 611h.01M410 611h.01M423 611h.01M436 611h.01M449 611h.01M325 624h.01M338 624h.01M351 624h.01M364 624h.01M377 624h.01M390 624h.01M403 624h.01M416 624h.01M429 624h.01M332 637h.01M345 637h.01M358 637h.01M371 637h.01M384 637h.01M397 637h.01M410 637h.01M423 637h.01M338 650h.01M351 650h.01M364 650h.01M377 650h.01M390 650h.01M403 650h.01M416 650h.01M345 663h.01M358 663h.01M371 663h.01M384 663h.01" />
+              <g class="fmap__route" data-from="wvb" data-to="drc">
+                <path class="fmap__routeBase" d="M301.2 560.4 Q 371.3 528.3 409.7 461.5" />
+                <path class="fmap__routeFlow" d="M301.2 560.4 Q 371.3 528.3 409.7 461.5" />
+              </g>
+              <g class="fmap__route" data-from="wvb" data-to="zmb">
+                <path class="fmap__routeBase" d="M301.2 560.4 Q 364.3 536.1 416.7 493.3" />
+                <path class="fmap__routeFlow" d="M301.2 560.4 Q 364.3 536.1 416.7 493.3" />
+              </g>
+              <g class="fmap__route" data-from="wvb" data-to="zwe">
+                <path class="fmap__routeBase" d="M301.2 560.4 Q 365.8 523.7 439.6 514.6" />
+                <path class="fmap__routeFlow" d="M301.2 560.4 Q 365.8 523.7 439.6 514.6" />
+              </g>
+              <g class="fmap__route" data-from="dji" data-to="eth">
+                <path class="fmap__routeBase" d="M540.7 265.5 Q 518.4 269.8 503.9 287.3" />
+                <path class="fmap__routeFlow" d="M540.7 265.5 Q 518.4 269.8 503.9 287.3" />
+              </g>
+              <text class="fmap__label" x="283.2" y="564.4" text-anchor="end">WALVIS BAY</text>
+              <text class="fmap__label" x="556.7" y="255.5" text-anchor="start">DJIBOUTI</text>
+              <g class="fmap__node fmap__node--gateway" tabindex="0" role="button" transform="translate(301.2,560.4)"
+                 data-id="wvb" data-x="301.2" data-y="560.4"
+                 aria-label="Walvis Bay, Namibia — gateway port">
+                <circle class="fmap__hit" r="20" />
+                <circle class="fmap__pulse" r="9" />
+                <circle class="fmap__ring" r="10" />
+                <circle class="fmap__core" r="4.5" />
+              </g>
+              <g class="fmap__node fmap__node--gateway" tabindex="0" role="button" transform="translate(540.7,265.5)"
+                 data-id="dji" data-x="540.7" data-y="265.5"
+                 aria-label="Djibouti, Djibouti — gateway port">
+                <circle class="fmap__hit" r="20" />
+                <circle class="fmap__pulse" r="9" />
+                <circle class="fmap__ring" r="10" />
+                <circle class="fmap__core" r="4.5" />
+              </g>
+              <g class="fmap__node fmap__node--market" tabindex="0" role="button" transform="translate(409.7,461.5)"
+                 data-id="drc" data-x="409.7" data-y="461.5"
+                 aria-label="Lubumbashi, DR Congo — corridor market">
+                <circle class="fmap__hit" r="14" />
+                <circle class="fmap__ring" r="6.5" />
+                <circle class="fmap__core" r="3" />
+              </g>
+              <g class="fmap__node fmap__node--market" tabindex="0" role="button" transform="translate(416.7,493.3)"
+                 data-id="zmb" data-x="416.7" data-y="493.3"
+                 aria-label="Lusaka, Zambia — corridor market">
+                <circle class="fmap__hit" r="14" />
+                <circle class="fmap__ring" r="6.5" />
+                <circle class="fmap__core" r="3" />
+              </g>
+              <g class="fmap__node fmap__node--market" tabindex="0" role="button" transform="translate(439.6,514.6)"
+                 data-id="zwe" data-x="439.6" data-y="514.6"
+                 aria-label="Harare, Zimbabwe — corridor market">
+                <circle class="fmap__hit" r="14" />
+                <circle class="fmap__ring" r="6.5" />
+                <circle class="fmap__core" r="3" />
+              </g>
+              <g class="fmap__node fmap__node--market" tabindex="0" role="button" transform="translate(503.9,287.3)"
+                 data-id="eth" data-x="503.9" data-y="287.3"
+                 aria-label="Addis Ababa, Ethiopia — corridor market">
+                <circle class="fmap__hit" r="14" />
+                <circle class="fmap__ring" r="6.5" />
+                <circle class="fmap__core" r="3" />
+              </g>
+            </svg>
+
+            <div class="fmap__tip" id="fmapTip" hidden>
+              <span class="fmap__tipKind mono"></span>
+              <span class="fmap__tipName"></span>
+              <span class="fmap__tipText"></span>
+            </div>
+
+            <div class="fmap__legend mono" aria-hidden="true">
+              <span class="fmap__legendItem"><span class="fmap__legendDot fmap__legendDot--gateway"></span>GATEWAY&nbsp;PORT</span>
+              <span class="fmap__legendItem"><span class="fmap__legendDot fmap__legendDot--market"></span>CORRIDOR&nbsp;MARKET</span>
+            </div>
+          </div>
+
+          <div class="presence__content">
+            <div class="presence__card reveal">
+              <span class="presence__pin mono">22°57′S&nbsp;14°30′E</span>
+              <h3 class="presence__title">Atlantic gateway: Walvis Bay</h3>
+              <p class="presence__text">Deep-water port access with rail-linked bulk storage, serving inland corridor markets across the region.</p>
+            </div>
+
+            <div class="presence__card reveal">
+              <span class="presence__pin mono">CORRIDOR&nbsp;NETWORK</span>
+              <h3 class="presence__title">Regional execution</h3>
+              <p class="presence__text">Projects designed to improve throughput, strengthen compliance and support more reliable supply into growing inland markets.</p>
+            </div>
+
+            <div class="presence__card presence__card--accent reveal">
+              <h3 class="presence__title">Built for long-term impact</h3>
+              <p class="presence__text">Durable infrastructure platforms that strengthen energy security, enable trade and support sustainable growth across Africa.</p>
+              <a class="text-link text-link--onGreen" href="#contact">Discuss a partnership <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LINKEDIN ============ -->
+    <section class="section section--white" id="linkedin" aria-label="LinkedIn updates">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="eyebrow mono">FROM&nbsp;THE&nbsp;COMPANY&nbsp;PAGE</p>
+            <h2 class="section__title">Latest on LinkedIn</h2>
+            <p class="section__sub">Our latest updates, market perspective and infrastructure progress, straight from our LinkedIn.</p>
+          </div>
+          <a class="btn btn--li btn--small li__followBtn" href="https://www.linkedin.com/company/theatacamagroup" target="_blank" rel="noopener">Follow on LinkedIn</a>
+        </div>
+
+        <div class="li">
+          <div class="li__grid" id="linkedinEmbeds" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSIGHTS ============ -->
+    <section class="section" id="insights" aria-label="Insights">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="eyebrow mono"><span class="live-dot live-dot--inline" aria-hidden="true"></span>LIVE&nbsp;FEED</p>
+            <h2 class="section__title">Insights</h2>
+            <p class="section__sub">Live market signals shaping energy, infrastructure and trade across Africa.</p>
+          </div>
+        </div>
+        <div class="news-grid" id="newsCards"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="cta" id="contact" aria-label="Contact">
+      <div class="container cta__inner">
+        <div class="cta__copy">
+          <p class="eyebrow eyebrow--onGreen mono">START&nbsp;A&nbsp;CONVERSATION</p>
+          <h2 class="cta__title">Let’s build energy infrastructure that strengthens regional resilience.</h2>
+          <p class="cta__text">Reach out for strategic discussions on infrastructure, logistics, market development and long-term energy growth.</p>
+        </div>
+
+        <form class="cta__form" id="contactForm" novalidate aria-label="Contact form">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required minlength="2" maxlength="80" />
+            <span class="field__error" id="nameError">Please enter your full name.</span>
+          </div>
+
+          <div class="field field--split">
+            <div class="field">
+              <label for="email">Work email</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required inputmode="email" maxlength="120" />
+              <span class="field__error" id="emailError">Please enter a valid email address.</span>
+            </div>
+
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Company name" autocomplete="organization" required minlength="2" maxlength="120" />
+              <span class="field__error" id="companyError">Please enter your company name.</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="website">Website <span class="field__labelNote">optional</span></label>
+            <input id="website" name="website" type="url" placeholder="https://yourcompany.com" autocomplete="url" inputmode="url" maxlength="200" />
+            <span class="field__error" id="websiteError">Please enter a valid website address, or leave it blank.</span>
+          </div>
+
+          <div class="field">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" rows="5" placeholder="Tell us what you would like to discuss: infrastructure, logistics, market development, or partnerships." required minlength="20" maxlength="2000"></textarea>
+            <div class="field__meta">
+              <span class="field__error" id="msgError">Please add a more detailed message.</span>
+              <span class="field__count mono" id="msgCount">0 / 2000</span>
+            </div>
+          </div>
+
+          <div class="field field--hiddenTrap">
+            <label for="contactFax">Leave this field blank (not required)</label>
+            <input id="contactFax" name="faxNumber" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="field field--hiddenTrap">
+            <label for="contactOffice">Leave this field blank (not required)</label>
+            <input id="contactOffice" name="officeLocation" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <input type="hidden" id="formStartedAt" name="formStartedAt" value="" />
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+
+          <div class="cta__actions">
+            <button class="btn btn--primary btn--onCard" id="contactSubmit" type="submit">Mail Us</button>
+            <a class="btn btn--ghost btn--ghostOnCard" href="#top">Back to top</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <img class="footer__logo" src="assets/logo/tag-logo-ivory.png" alt="The Atacama Group" loading="lazy" />
+        <p class="footer__text">Strategic energy infrastructure and logistics across Africa.</p>
+        <p class="footer__coords mono">PIONEERING&nbsp;GLOBAL&nbsp;SOLUTIONS</p>
+      </div>
+
+      <div class="footer__right">
+        <div class="footer__col">
+          <div class="footer__head mono">COMPANY</div>
+          <a href="#corridor">The Corridor</a>
+          <a href="#solutions">What We Do</a>
+          <a href="#presence">Footprint</a>
+          <a href="#linkedin">LinkedIn</a>
+        </div>
+        <div class="footer__col">
+          <div class="footer__head mono">INSIGHTS</div>
+          <a href="#insights">Live feed</a>
+          <a href="#contact">Contact</a>
+          <a href="#top">Top</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> The Atacama Group. All rights reserved.</span>
+      <span class="mono footer__stamp">TAG&nbsp;·&nbsp;PORT&nbsp;→&nbsp;STORAGE&nbsp;→&nbsp;RAIL&nbsp;→&nbsp;MARKET</span>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
